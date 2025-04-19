@@ -1,0 +1,26 @@
+.topBar {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание элементов по правому краю */
+    align-items: center;
+    padding: 10px;
+    height: 93%;
+    width: 100%;
+    margin: 3px;
+    background-color: #57b2aa; /* Teal color */
+    border-radius: 5px;
+
+}
+
+.icon {
+    cursor: pointer;
+    color: white; /* White color for icons for better visibility */
+    font-size: 24px; /* Icon size */
+    margin-left: 15px; /* Добавляем отступ слева для разделения иконок */
+}
+
+.icon:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    border-radius: 50%;
+    padding: 8px;
+}
+

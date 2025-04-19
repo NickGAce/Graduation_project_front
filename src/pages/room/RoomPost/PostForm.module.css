@@ -1,0 +1,81 @@
+/* PostForm.module.css */
+
+.postForm {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formGroup label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+
+.formGroup input::placeholder {
+    color: #aaa;
+}
+.formGroup select {
+    width: 100%; /* Занимает всю доступную ширину в контейнере */
+    padding: 8px; /* Одинаковый отступ для согласованности с input */
+    border: 1px solid #ccc; /* Граница, аналогичная той, что используется в input */
+    border-radius: 3px; /* Скругленные углы для согласованности внешнего вида */
+    background-color: #fff; /* Установка фона, чтобы select выглядел однородно в разных браузерах */
+    color: #333; /* Цвет текста для лучшей читаемости */
+    appearance: none; /* Отключаем стандартный внешний вид в некоторых браузерах */
+    -moz-appearance: none; /* Отключаем стандартный внешний вид в Firefox */
+    -webkit-appearance: none; /* Отключаем стандартный внешний вид в Safari и Chrome */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" height="20" width="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><polygon points="6,8 14,8 10,12"></polygon></svg>'); /* Иконка-стрелка для указания на выпадающий список */
+    background-repeat: no-repeat;
+    background-position: right 8px top 50%; /* Позиционирование иконки стрелки */
+    cursor: pointer; /* Изменение курсора, указывающее на интерактивность элемента */
+}
+
+/* Стили для оформления иконки стрелки в select в Firefox */
+@-moz-document url-prefix() {
+    .formGroup select {
+        text-indent: 0.01px; /* Трюк для оформления select в Firefox */
+        text-overflow: ''; /* Трюк для оформления select в Firefox */
+    }
+}
+
+.select-container {
+    width: 200px;
+}
+
+.select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff; /* Цвет фона селекта */
+    appearance: none; /* Убираем стандартный стиль селекта */
+    cursor: pointer; /* Изменение курсора при наведении на селект */
+}
+
+.select option {
+    font-size: 16px;
+    background-color: #fff; /* Цвет фона опций */
+    color: #000; /* Цвет текста опций */
+}
+
+.select option:hover {
+    background-color: #f0f5f9; /* Цвет фона опций при наведении */
+}
+

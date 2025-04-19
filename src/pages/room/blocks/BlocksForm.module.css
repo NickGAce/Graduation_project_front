@@ -1,0 +1,75 @@
+/* FloorsForm.module.css */
+
+.blocksContainer {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.blocksHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blockInputContainer {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.blockInputContainer input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.blockInputContainer button {
+    padding: 8px 16px;
+
+}
+
+
+
+.blocksList {
+    list-style: none;
+    padding: 0;
+}
+
+.blocksList li {
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-container {
+    width: 200px;
+}
+
+.select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff; /* Цвет фона селекта */
+    appearance: none; /* Убираем стандартный стиль селекта */
+    cursor: pointer; /* Изменение курсора при наведении на селект */
+}
+
+.select option {
+    font-size: 16px;
+    background-color: #fff; /* Цвет фона опций */
+    color: #000; /* Цвет текста опций */
+}
+
+.select option:hover {
+    background-color: #f0f5f9; /* Цвет фона опций при наведении */
+}

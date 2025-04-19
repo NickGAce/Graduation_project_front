@@ -1,0 +1,231 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.wrapper_room_resident {
+    width: 1400px;
+    height: 760px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: auto;
+    animation: fadeIn 1s ease-out;
+    background-color: #f4f4f4;
+}
+
+.resident_card {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 128, 128, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.resident_card_content {
+    width: 75%; /* Занимает большинство горизонтального пространства карточки */
+    max-height: 260px; /* Определяем максимальную высоту для активации скролла */
+    overflow-y: auto; /* Включаем вертикальный скролл при необходимости */
+    scrollbar-width: thin; /* Тонкий скроллбар для Firefox */
+    scrollbar-color: #008080 #f0f0f0; /* Цвета для скроллбара */
+}
+
+/* Стили скроллбара для WebKit-браузеров (Chrome, Safari) */
+.resident_card_content::-webkit-scrollbar {
+    width: 6px; /* Ширина скроллбара */
+}
+
+.resident_card_content::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Фоновый цвет дорожки скроллбара */
+}
+
+.resident_card_content::-webkit-scrollbar-thumb {
+    background-color: #008080; /* Цвет ползунка скроллбара */
+    border-radius: 10px; /* Скругление углов ползунка */
+}
+
+.resident_card_actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resident_action_button {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 160px;
+    height: 50px;
+}
+
+.resident_action_button:hover {
+    background-color: darkcyan;
+}
+
+.resident_card h3 {
+    font-size: 20px;
+    color: #008080; /* Teal color */
+    margin-bottom: 5px;
+}
+
+.resident_card p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.resident_card .highlight {
+    color: #005757;
+    font-weight: bold;
+}
+
+.resident_card_label {
+    font-weight:bold;
+    color: #008080;
+}
+
+
+
+
+/* Стили для комментариев */
+.comments_section {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.comment_card {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #008080;
+    font-size: 16px;
+}
+
+.room_info {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Дополнительные стили для заголовков и подписей в карточках */
+h3 {
+    color: #0056b3;
+}
+
+/* Стиль для меток в карточках */
+.resident_card_label {
+    font-weight: bold;
+    color: #008080;
+}
+
+
+.room_info, .residents_list, .comments_section {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+
+
+
+.room_info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #e0f2f1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.room_info_item {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 18px; /* Увеличенный размер шрифта */
+}
+
+.room_info_label {
+    font-weight: bold;
+    color: #005757;
+    margin-right: 10px;
+}
+
+.capacity_bar {
+    width: 200px;
+    height: 30px; /* Увеличена высота для лучшего визуального восприятия */
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.capacity_fill {
+    height: 100%;
+    background-color: #008080;
+    border-radius: 15px;
+    transition: width 0.3s ease;
+}
+
+.snap_indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Уточните это значение в зависимости от логики позиционирования */
+    transform: translate(-100%, -50%); /* Центрирование элемента */
+    min-width: 50px; /* Увеличенная ширина */
+    height: 30px; /* Высота соответствует capacity_bar */
+    background-color: #ffffff;
+    border: 2px solid #008080;
+    border-radius: 15px; /* Скругление границ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #008080;
+    font-weight: bold;
+    padding: 0 10px; /* Дополнительное пространство внутри */
+
+}
+
+
+
+.p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.ratings{
+    height: 300px;
+}
+
+

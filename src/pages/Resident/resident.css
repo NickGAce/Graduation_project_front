@@ -1,0 +1,137 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.App {
+    width: 1400px;
+    height: 770px;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    overflow: auto; /* Добавляем прокрутку, если содержимое превышает размеры блока */
+    animation: fadeIn 1s ease-out; /* Применяем анимацию */
+}
+
+.filter_block {
+    height: 180px;
+    width: 300px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-color: #f0f5f9;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filter_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    justify-content: center; /* Выравнивание содержимого по горизонтали */
+    background-color: #fff; /* Добавлен фон */
+    border-radius: 20px; /* Добавлен скругленный угол */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Добавлена тень */
+    /* Добавлен отступ */
+    padding:30px;
+    width: 100%;
+    overflow: auto; /* Добавляем прокрутку, если содержимое превышает размеры блока */
+}
+.content p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.label {
+    color: #2e9f9f; /* Синий цвет для названий */
+    font-weight: bold; /* Сделать шрифт жирным */
+}
+
+.resident_wraper {
+    width: 1000px;
+    display: flex;
+    padding: 15px 30px;
+    border: 2px solid teal;
+    margin: 15px 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.resident_wraper:hover {
+    width: 1000px;
+    display: flex;
+    padding: 15px 30px;
+    border: 2px solid teal;
+    margin: 15px 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 3px 13px rgba(0, 0, 0, 0.1);
+}
+
+.resident_wrapper {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.resident_header {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.resident_details {
+    margin-top: 10px;
+}
+
+.resident_actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.not-found-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Высота блока равна высоте родительского контейнера */
+    width: 100%;
+}
+
+.not-found-message h2 {
+    text-align: center;
+}
+
+.post__btns {
+    display: flex;
+    align-items: center;
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px; /* Отступ между кнопками */
+}
+
+.post__content{
+    cursor: pointer;
+    width: 100%;
+}
+

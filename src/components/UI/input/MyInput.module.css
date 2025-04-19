@@ -1,0 +1,9 @@
+.MyInput {
+    width: 100%; /* Фиксированная ширина */
+    height: 30px;
+    padding: 5px 15px;
+    margin: 10px 0;
+    border: 1px solid teal;
+    border-radius: 10px;
+    resize: none; /* Запрет на изменение размеров */
+}

@@ -1,0 +1,30 @@
+/* MySelect.module.css */
+
+.select-container {
+  width: 200px;
+}
+
+.select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff; /* Цвет фона селекта */
+  appearance: none; /* Убираем стандартный стиль селекта */
+  cursor: pointer; /* Изменение курсора при наведении на селект */
+
+}
+
+.select option {
+  font-size: 16px;
+  background-color: #fff; /* Цвет фона опций */
+  color: #000; /* Цвет текста опций */
+
+
+}
+
+.select option:hover {
+  background-color: #f0f5f9; /* Цвет фона опций при наведении */
+}
+

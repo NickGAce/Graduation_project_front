@@ -1,0 +1,51 @@
+.profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 340px; /* Увеличенная максимальная ширина */
+    height: 150px;
+    margin: 20px 5px;
+    padding: 10px;
+    background-color: #e0f2f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 128, 128, 0.2);
+}
+
+.profileImage {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #4db6ac;
+}
+
+.profileDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0 5px;
+    text-align: left; /* Текст выравнивается по левому краю */
+}
+
+.profileDetails h3, .profileDetails p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #004d40; /* Темный teal для текста */
+}
+
+.editButton {
+    background: none;
+    border: none;
+    color: #009688;
+    cursor: pointer;
+}
+
+.editButton:hover {
+    color: #00897b;
+}
+
+.editButton .material-icons {
+    font-size: 24px;
+}

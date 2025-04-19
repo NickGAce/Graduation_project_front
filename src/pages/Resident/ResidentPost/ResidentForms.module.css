@@ -1,0 +1,61 @@
+.postForm {
+    width: 400px;
+    margin: 20px auto; /* Увеличен вертикальный отступ для лучшей центровки */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formGroup {
+    margin-bottom: 20px; /* Увеличен нижний отступ для лучшего разделения полей */
+}
+
+.formGroup label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Увеличен отступ от метки до поля */
+    font-size: 14px; /* Увеличен размер шрифта метки */
+}
+
+.formGroup input, .formGroup select {
+    width: 100%;
+    padding: 12px 8px; /* Увеличен внутренний отступ для большей высоты */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Слегка увеличен радиус скругления */
+    background-color: #fff;
+    color: #333;
+    font-size: 16px; /* Увеличен размер шрифта в полях */
+}
+
+.formGroup input::placeholder {
+    color: #aaa;
+}
+
+.select-container {
+    width: 100%; /* Изменено для соответствия ширине формы */
+    margin-bottom: 20px; /* Увеличен отступ между селекторами */
+}
+
+.select {
+    width: 100%;
+    padding: 12px 8px; /* Увеличен внутренний отступ для большей высоты */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none;
+    cursor: pointer;
+    font-size: 16px; /* Увеличен размер шрифта в селектах */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" height="20" width="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><polygon points="6,8 14,8 10,12"></polygon></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Откорректировано позиционирование иконки */
+}
+
+.select option {
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+.select option:hover {
+    background-color: #f0f5f9;
+}

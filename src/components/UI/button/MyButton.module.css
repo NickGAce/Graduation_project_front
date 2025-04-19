@@ -1,0 +1,17 @@
+.myBtn {
+    padding: 5px 15px;
+    color: teal;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid teal;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* добавлено для плавности анимации */
+}
+
+.myBtn:hover {
+    background-color: teal;
+    color: white;
+}
+.myBtn:active {
+    transform: translateY(1px); /* Пример эффекта - кнопка немного опустится */
+}

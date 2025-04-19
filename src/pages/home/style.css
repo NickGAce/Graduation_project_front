@@ -1,0 +1,12 @@
+.home-container {
+    width: 1400px;
+    height: 770px;
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 20px;
+    overflow: auto;
+    animation: fadeIn 1s ease-out;
+    background-color: #b2dfdb; /* Светлый teal */
+}
+
+

@@ -1,0 +1,73 @@
+.sidebarContainer {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #629794;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.sidebarItem {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.dormInfoItem {
+    flex: 1;
+    background-color: #a2b9bc; /* Светло-голубой цвет */
+}
+
+.searchItem {
+    display: flex;
+    flex: 3;
+    background-color: #72c6c6; /* Серый цвет */
+    align-items: center;
+    justify-content: center; /* Текст и иконки выравниваются слева */
+    min-height: 320px;
+}
+
+.functionalityItem {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #008080; /* Основной teal цвет */
+    padding: 5px; /* Меньше отступы */
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 128, 128, 0.2);
+    border: 5px solid teal;
+}
+
+.functionBlock {
+    width: 80%; /* Меньший размер */
+    background-color: #80cbc4; /* Светлый teal для блоков функций */
+    margin: 8px; /* Уменьшенные отступы */
+    padding: 10px; /* Добавить внутренний отступ */
+    flex-grow: 1;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Текст и иконки выравниваются слева */
+    text-decoration: none;
+    font-size: 14px; /* Чуть меньше шрифт */
+}
+
+.functionBlock:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3);
+    background-color: #4db6ac;
+}
+
+.material_icons {
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+    margin-left: 20px;
+}
+
+.profileItem {
+    flex: 1;
+    background-color: #91d2d2; /* Фиолетовый цвет */
+}
